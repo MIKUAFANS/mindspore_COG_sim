@@ -1,0 +1,927 @@
+[INFO] Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[INFO] Connected new brain: Navigation?team=0
+liushasha
+2 is ok
+[INFO] Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[INFO] Connected new brain: Navigation?team=0
+liushasha
+start
+start
+Episode 0: loss is 0.002, rewards is -6.202
+start
+Episode 1: loss is 0.002, rewards is -2.871
+start
+Episode 2: loss is 0.028, rewards is -11.108
+start
+Episode 3: loss is 0.008, rewards is -25.433
+start
+Episode 4: loss is 0.01, rewards is 99.927
+start
+Episode 5: loss is 0.145, rewards is -4.892
+start
+Episode 6: loss is 0.007, rewards is -1.074
+start
+Episode 7: loss is 0.169, rewards is -21.085
+start
+Episode 8: loss is 0.823, rewards is -1.019
+start
+Episode 9: loss is 0.014, rewards is -23.79
+start
+Episode 10: loss is 0.007, rewards is -24.256
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 10 total rewards is -4.827
+-----------------------------------------
+start
+Episode 11: loss is 0.014, rewards is -16.941
+start
+Episode 12: loss is 0.095, rewards is -10.941
+start
+Episode 13: loss is 0.445, rewards is -5.277
+start
+Episode 14: loss is 0.357, rewards is -8.28
+start
+Episode 15: loss is 0.7, rewards is -3.443
+start
+Episode 16: loss is 0.005, rewards is -12.028
+start
+Episode 17: loss is 0.025, rewards is -18.704
+start
+Episode 18: loss is 0.78, rewards is -1.418
+start
+Episode 19: loss is 0.039, rewards is -13.342
+start
+Episode 20: loss is 0.016, rewards is -17.214
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 20 total rewards is -6.655
+-----------------------------------------
+start
+Episode 21: loss is 0.016, rewards is -3.265
+start
+Episode 22: loss is 0.024, rewards is -16.04
+start
+Episode 23: loss is 0.015, rewards is -11.307
+start
+Episode 24: loss is 0.113, rewards is -13.923
+start
+Episode 25: loss is 0.028, rewards is -12.608
+start
+Episode 26: loss is 0.027, rewards is -2.915
+start
+Episode 27: loss is 0.214, rewards is -14.74
+start
+Episode 28: loss is 0.029, rewards is -15.154
+start
+Episode 29: loss is 0.009, rewards is -6.822
+start
+Episode 30: loss is 0.097, rewards is -5.04
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 30 total rewards is -9.558
+-----------------------------------------
+start
+Episode 31: loss is 0.03, rewards is -21.264
+start
+Episode 32: loss is 0.02, rewards is 99.993
+start
+Episode 33: loss is 0.163, rewards is -5.934
+start
+Episode 34: loss is 0.048, rewards is -25.085
+start
+Episode 35: loss is 0.067, rewards is -4.605
+start
+Episode 36: loss is 0.032, rewards is -4.878
+start
+Episode 37: loss is 0.026, rewards is -10.185
+start
+Episode 38: loss is 0.046, rewards is -6.092
+start
+Episode 39: loss is 0.015, rewards is -2.232
+start
+Episode 40: loss is 0.012, rewards is -0.144
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 40 total rewards is -12.279
+-----------------------------------------
+start
+Episode 41: loss is 0.004, rewards is -2.702
+start
+Episode 42: loss is 0.025, rewards is -11.209
+start
+Episode 43: loss is 0.009, rewards is -9.218
+start
+Episode 44: loss is 0.571, rewards is -8.263
+start
+Episode 45: loss is 0.067, rewards is -14.459
+start
+Episode 46: loss is 0.005, rewards is -25.965
+start
+Episode 47: loss is 0.006, rewards is -5.623
+start
+Episode 48: loss is 0.306, rewards is -21.426
+start
+Episode 49: loss is 0.261, rewards is -25.184
+start
+Episode 50: loss is 0.013, rewards is -23.252
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 50 total rewards is -5.444
+-----------------------------------------
+start
+Episode 51: loss is 0.08, rewards is -3.956
+start
+Episode 52: loss is 0.195, rewards is -5.964
+start
+Episode 53: loss is 0.188, rewards is -2.97
+start
+Episode 54: loss is 0.063, rewards is -12.276
+start
+Episode 55: loss is 0.014, rewards is -2.796
+start
+Episode 56: loss is 0.03, rewards is -8.953
+start
+Episode 57: loss is 0.001, rewards is -3.086
+start
+Episode 58: loss is 0.014, rewards is -23.31
+start
+Episode 59: loss is 0.068, rewards is -3.57
+start
+Episode 60: loss is 0.005, rewards is -1.302
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 60 total rewards is 2.506
+-----------------------------------------
+start
+Episode 61: loss is 0.003, rewards is -17.774
+start
+Episode 62: loss is 0.271, rewards is -9.258
+start
+Episode 63: loss is 0.047, rewards is -12.669
+start
+Episode 64: loss is 0.105, rewards is 99.996
+start
+Episode 65: loss is 0.017, rewards is -17.493
+start
+Episode 66: loss is 0.004, rewards is -13.61
+start
+Episode 67: loss is 0.005, rewards is -11.046
+start
+Episode 68: loss is 0.013, rewards is -18.134
+start
+Episode 69: loss is 0.054, rewards is -15.643
+start
+Episode 70: loss is 0.049, rewards is -6.518
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 70 total rewards is 0.444
+-----------------------------------------
+start
+Episode 71: loss is 0.02, rewards is -10.764
+start
+Episode 72: loss is 0.006, rewards is -26.146
+start
+Episode 73: loss is 0.002, rewards is -1.98
+start
+Episode 74: loss is 0.052, rewards is -10.694
+start
+Episode 75: loss is 0.012, rewards is -8.641
+start
+Episode 76: loss is 0.006, rewards is -20.573
+start
+Episode 77: loss is 0.152, rewards is -11.176
+start
+Episode 78: loss is 0.335, rewards is -17.758
+start
+Episode 79: loss is 0.007, rewards is -15.357
+start
+Episode 80: loss is 0.001, rewards is -0.076
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 80 total rewards is -8.673
+-----------------------------------------
+start
+Episode 81: loss is 0.011, rewards is -1.671
+start
+Episode 82: loss is 0.067, rewards is -2.372
+start
+Episode 83: loss is 0.014, rewards is -2.346
+start
+Episode 84: loss is 0.045, rewards is -13.767
+start
+Episode 85: loss is 0.033, rewards is -1.313
+start
+Episode 86: loss is 0.002, rewards is -4.002
+start
+Episode 87: loss is 0.003, rewards is -4.404
+start
+Episode 88: loss is 0.004, rewards is -1.733
+start
+Episode 89: loss is 0.002, rewards is 99.968
+start
+Episode 90: loss is 0.033, rewards is -9.934
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 90 total rewards is 5.724
+-----------------------------------------
+start
+Episode 91: loss is 0.705, rewards is -5.495
+start
+Episode 92: loss is 0.005, rewards is -2.575
+start
+Episode 93: loss is 0.061, rewards is -26.073
+start
+Episode 94: loss is 0.003, rewards is 99.916
+start
+Episode 95: loss is 0.0, rewards is -9.143
+start
+Episode 96: loss is 0.08, rewards is -5.652
+start
+Episode 97: loss is 0.007, rewards is -1.947
+start
+Episode 98: loss is 0.001, rewards is -21.649
+start
+Episode 99: loss is 0.006, rewards is -20.826
+start
+Episode 100: loss is 0.015, rewards is -9.426
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 100 total rewards is -1.162
+-----------------------------------------
+start
+Episode 101: loss is 0.002, rewards is -21.64
+start
+Episode 102: loss is 0.001, rewards is -15.948
+start
+Episode 103: loss is 0.003, rewards is -8.201
+start
+Episode 104: loss is 0.028, rewards is -18.48
+start
+Episode 105: loss is 0.002, rewards is -20.338
+start
+Episode 106: loss is 0.002, rewards is -4.852
+start
+Episode 107: loss is 0.004, rewards is -5.61
+start
+Episode 108: loss is 0.001, rewards is -11.325
+start
+Episode 109: loss is 0.019, rewards is -0.973
+start
+Episode 110: loss is 0.005, rewards is -23.201
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 110 total rewards is 3.173
+-----------------------------------------
+start
+Episode 111: loss is 0.019, rewards is -5.957
+start
+Episode 112: loss is 0.005, rewards is -19.995
+start
+Episode 113: loss is 0.002, rewards is -1.64
+start
+Episode 114: loss is 0.002, rewards is 99.989
+start
+Episode 115: loss is 0.003, rewards is -6.579
+start
+Episode 116: loss is 0.115, rewards is -13.133
+start
+Episode 117: loss is 0.017, rewards is 99.98
+start
+Episode 118: loss is 0.035, rewards is -19.807
+start
+Episode 119: loss is 0.004, rewards is -3.106
+start
+Episode 120: loss is 0.006, rewards is -4.799
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 120 total rewards is 10.726
+-----------------------------------------
+start
+Episode 121: loss is 0.057, rewards is -1.804
+start
+Episode 122: loss is 0.006, rewards is -3.834
+start
+Episode 123: loss is 0.008, rewards is -0.887
+start
+Episode 124: loss is 0.005, rewards is -0.452
+start
+Episode 125: loss is 0.005, rewards is -7.135
+start
+Episode 126: loss is 0.404, rewards is -12.706
+start
+Episode 127: loss is 0.005, rewards is -8.797
+start
+Episode 128: loss is 0.003, rewards is -23.67
+start
+Episode 129: loss is 0.024, rewards is -9.295
+start
+Episode 130: loss is 0.403, rewards is -3.94
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 130 total rewards is -8.357
+-----------------------------------------
+start
+Episode 131: loss is 0.192, rewards is 99.955
+start
+Episode 132: loss is 0.011, rewards is -6.938
+start
+Episode 133: loss is 0.015, rewards is -4.064
+start
+Episode 134: loss is 0.005, rewards is -7.545
+start
+Episode 135: loss is 0.008, rewards is -20.156
+start
+Episode 136: loss is 0.005, rewards is -1.036
+start
+Episode 137: loss is 0.002, rewards is -7.329
+start
+Episode 138: loss is 0.004, rewards is -0.072
+start
+Episode 139: loss is 0.002, rewards is -22.746
+start
+Episode 140: loss is 0.236, rewards is -4.78
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 140 total rewards is -5.646
+-----------------------------------------
+start
+Episode 141: loss is 166.943, rewards is -7.797
+start
+Episode 142: loss is 0.013, rewards is -12.459
+start
+Episode 143: loss is 0.467, rewards is -3.064
+start
+Episode 144: loss is 0.001, rewards is -0.154
+start
+Episode 145: loss is 0.153, rewards is 99.894
+start
+Episode 146: loss is 0.049, rewards is -7.771
+start
+Episode 147: loss is 0.002, rewards is -4.145
+start
+Episode 148: loss is 0.034, rewards is -2.514
+start
+Episode 149: loss is 165.635, rewards is -17.855
+start
+Episode 150: loss is 0.008, rewards is -2.074
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 150 total rewards is -4.765
+-----------------------------------------
+start
+Episode 151: loss is 0.013, rewards is -17.991
+start
+Episode 152: loss is 0.357, rewards is -5.039
+start
+Episode 153: loss is 0.005, rewards is -13.684
+start
+Episode 154: loss is 0.199, rewards is -24.293
+start
+Episode 155: loss is 0.358, rewards is -1.672
+start
+Episode 156: loss is 0.01, rewards is -12.963
+start
+Episode 157: loss is 0.041, rewards is 99.93
+start
+Episode 158: loss is 0.007, rewards is 99.99
+start
+Episode 159: loss is 0.273, rewards is -10.501
+start
+Episode 160: loss is 0.042, rewards is -5.068
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 160 total rewards is 11.772
+-----------------------------------------
+start
+Episode 161: loss is 0.007, rewards is 99.967
+start
+Episode 162: loss is 0.031, rewards is -4.337
+start
+Episode 163: loss is 0.069, rewards is -4.131
+start
+Episode 164: loss is 0.003, rewards is -2.017
+start
+Episode 165: loss is 0.043, rewards is -4.409
+start
+Episode 166: loss is 160.904, rewards is -4.923
+start
+Episode 167: loss is 0.004, rewards is -17.43
+start
+Episode 168: loss is 0.301, rewards is -1.855
+start
+Episode 169: loss is 0.003, rewards is -2.087
+start
+Episode 170: loss is 0.178, rewards is -3.152
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 170 total rewards is 5.041
+-----------------------------------------
+start
+Episode 171: loss is 0.05, rewards is 99.82
+start
+Episode 172: loss is 0.027, rewards is -2.692
+start
+Episode 173: loss is 0.042, rewards is -1.739
+start
+Episode 174: loss is 0.51, rewards is -10.723
+start
+Episode 175: loss is 0.003, rewards is -2.116
+start
+Episode 176: loss is 0.315, rewards is -0.109
+start
+Episode 177: loss is 0.002, rewards is -3.019
+start
+Episode 178: loss is 0.02, rewards is -18.364
+start
+Episode 179: loss is 0.062, rewards is -9.17
+start
+Episode 180: loss is 0.008, rewards is -20.46
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 180 total rewards is -8.670
+-----------------------------------------
+start
+Episode 181: loss is 0.07, rewards is -2.42
+start
+Episode 182: loss is 0.012, rewards is -3.071
+start
+Episode 183: loss is 0.002, rewards is -12.682
+start
+Episode 184: loss is 0.005, rewards is -15.122
+start
+Episode 185: loss is 0.001, rewards is -1.21
+start
+Episode 186: loss is 0.004, rewards is -9.575
+start
+Episode 187: loss is 0.003, rewards is -8.57
+start
+Episode 188: loss is 0.081, rewards is -25.964
+start
+Episode 189: loss is 0.013, rewards is -3.327
+start
+Episode 190: loss is 0.01, rewards is -0.622
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 190 total rewards is -9.752
+-----------------------------------------
+start
+Episode 191: loss is 0.003, rewards is -1.84
+start
+Episode 192: loss is 0.007, rewards is -3.043
+start
+Episode 193: loss is 0.145, rewards is -5.622
+start
+Episode 194: loss is 0.002, rewards is -13.209
+start
+Episode 195: loss is 0.423, rewards is -10.15
+start
+Episode 196: loss is 0.035, rewards is -2.221
+start
+Episode 197: loss is 0.033, rewards is -13.727
+start
+Episode 198: loss is 0.053, rewards is -16.66
+start
+Episode 199: loss is 0.338, rewards is -3.453
+start
+Episode 200: loss is 0.032, rewards is 99.994
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 200 total rewards is -11.729
+-----------------------------------------
+start
+Episode 201: loss is 0.001, rewards is -19.637
+start
+Episode 202: loss is 0.145, rewards is 99.689
+start
+Episode 203: loss is 0.18, rewards is -20.936
+start
+Episode 204: loss is 0.025, rewards is -17.148
+start
+Episode 205: loss is 0.003, rewards is -25.62
+start
+Episode 206: loss is 0.097, rewards is -11.248
+start
+Episode 207: loss is 0.026, rewards is 99.935
+start
+Episode 208: loss is 0.105, rewards is -10.016
+start
+Episode 209: loss is 0.067, rewards is -2.26
+start
+Episode 210: loss is 0.076, rewards is -11.052
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 210 total rewards is -7.082
+-----------------------------------------
+start
+Episode 211: loss is 0.209, rewards is -13.433
+start
+Episode 212: loss is 0.003, rewards is -3.131
+start
+Episode 213: loss is 0.001, rewards is -16.822
+start
+Episode 214: loss is 0.068, rewards is -24.59
+start
+Episode 215: loss is 0.203, rewards is 99.996
+start
+Episode 216: loss is 0.06, rewards is -4.912
+start
+Episode 217: loss is 0.006, rewards is -2.489
+start
+Episode 218: loss is 0.012, rewards is -6.992
+start
+Episode 219: loss is 0.071, rewards is -17.772
+start
+Episode 220: loss is 0.016, rewards is -3.335
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 220 total rewards is -8.032
+-----------------------------------------
+start
+Episode 221: loss is 0.114, rewards is -4.168
+start
+Episode 222: loss is 0.261, rewards is -15.251
+start
+Episode 223: loss is 0.009, rewards is -12.021
+start
+Episode 224: loss is 0.062, rewards is -15.746
+start
+Episode 225: loss is 0.025, rewards is -12.233
+start
+Episode 226: loss is 0.006, rewards is 99.958
+start
+Episode 227: loss is 0.315, rewards is -3.879
+start
+Episode 228: loss is 0.343, rewards is -5.752
+start
+Episode 229: loss is 0.071, rewards is -12.37
+start
+Episode 230: loss is 0.063, rewards is -5.458
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 230 total rewards is -4.356
+-----------------------------------------
+start
+Episode 231: loss is 0.006, rewards is -1.173
+start
+Episode 232: loss is 0.004, rewards is -6.639
+start
+Episode 233: loss is 0.03, rewards is -1.139
+start
+Episode 234: loss is 0.003, rewards is -21.589
+start
+Episode 235: loss is 0.055, rewards is -3.249
+start
+Episode 236: loss is 0.006, rewards is -6.367
+start
+Episode 237: loss is 0.09, rewards is -3.043
+start
+Episode 238: loss is 0.084, rewards is -17.977
+start
+Episode 239: loss is 0.552, rewards is -22.041
+start
+Episode 240: loss is 0.007, rewards is -19.286
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 240 total rewards is -5.510
+-----------------------------------------
+start
+Episode 241: loss is 0.005, rewards is -17.924
+start
+Episode 242: loss is 169.76, rewards is -23.369
+start
+Episode 243: loss is 0.002, rewards is -0.891
+start
+Episode 244: loss is 0.329, rewards is -4.319
+start
+Episode 245: loss is 0.003, rewards is -1.133
+start
+Episode 246: loss is 0.177, rewards is -1.723
+start
+Episode 247: loss is 0.206, rewards is -2.008
+start
+Episode 248: loss is 0.005, rewards is 99.975
+start
+Episode 249: loss is 0.035, rewards is -12.241
+start
+Episode 250: loss is 0.017, rewards is -2.886
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 250 total rewards is 4.636
+-----------------------------------------
+start
+Episode 251: loss is 0.002, rewards is -3.388
+start
+Episode 252: loss is 155.489, rewards is -3.22
+start
+Episode 253: loss is 0.036, rewards is -18.423
+start
+Episode 254: loss is 0.005, rewards is -18.642
+start
+Episode 255: loss is 0.109, rewards is -9.705
+start
+Episode 256: loss is 0.404, rewards is -16.86
+start
+Episode 257: loss is 0.003, rewards is -2.885
+start
+Episode 258: loss is 0.005, rewards is -7.885
+start
+Episode 259: loss is 0.005, rewards is -27.125
+start
+Episode 260: loss is 0.057, rewards is -9.031
+start
+start
+start
+start
+start
+start
+start
+start
+start
+start
+-----------------------------------------
+Evaluate for episode 260 total rewards is -13.100
+-----------------------------------------
+start
+Episode 261: loss is 0.003, rewards is -16.853
+start
+Episode 262: loss is 0.007, rewards is -14.861
+start
+Episode 263: loss is 0.015, rewards is -5.879
+start
+Episode 264: loss is 0.002, rewards is -9.359
+start
+Episode 265: loss is 0.108, rewards is -3.03
+start
+Episode 266: loss is 0.064, rewards is -3.621
+start
+Episode 267: loss is 0.15, rewards is -10.796
+start
+Episode 268: loss is 0.008, rewards is -7.343
+start
+Episode 269: loss is 0.336, rewards is -22.66
+start
+Episode 270: loss is 0.002, rewards is -24.283
+/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/gym/logger.py:34: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize("%s: %s" % ("WARN", msg % args), "yellow"))
+start
+Traceback (most recent call last):
+  File "/home/lx/rlclass/reinforcement/example/dqn/scripts/../train.py", line 53, in <module>
+    train()
+  File "/home/lx/rlclass/reinforcement/example/dqn/scripts/../train.py", line 50, in train
+    dqn_session.run(class_type=DQNTrainer, episode=episode, params=config.trainer_params, callbacks=cbs)
+  File "/home/lx/rlclass/reinforcement/example/dqn/mindspore_rl/core/session.py", line 93, in run
+    trainer.train(episode, callbacks, ckpt_path)
+  File "/home/lx/rlclass/reinforcement/example/dqn/mindspore_rl/agent/trainer.py", line 104, in train
+    callback_list.episode_end(cb_params)
+  File "/home/lx/rlclass/reinforcement/example/dqn/mindspore_rl/utils/callback.py", line 107, in episode_end
+    cb.episode_end(params)
+  File "/home/lx/rlclass/reinforcement/example/dqn/mindspore_rl/utils/callback.py", line 313, in episode_end
+    rewards = params.evaluate()
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/mindspore/common/api.py", line 532, in staging_specialize
+    out = _MindsporeFunctionExecutor(func, hash_obj, input_signature, process_obj, jit_config)(*args)
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/mindspore/common/api.py", line 95, in wrapper
+    results = fn(*arg, **kwargs)
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/mindspore/common/api.py", line 343, in __call__
+    output = self._graph_executor(tuple(new_inputs), phase)
+  File "/home/lx/rlclass/reinforcement/example/dqn/mindspore_rl/environment/gym_environment.py", line 212, in _step
+    s, r, done, _ = self._env.step(action)
+  File "/home/lx/rlclass/reinforcement/example/dqn/mindspore_rl/Cogenvdecoder/Cogenvdecoder/CogEnvDecoder.py", line 164, in step
+    obs = self._obs
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/gym_unity/envs/__init__.py", line 201, in step
+    self._env.step()
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/mlagents_envs/timers.py", line 305, in wrapped
+    return func(*args, **kwargs)
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/mlagents_envs/environment.py", line 348, in step
+    outputs = self._communicator.exchange(step_input, self._poll_process)
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/mlagents_envs/rpc_communicator.py", line 142, in exchange
+    self.poll_for_timeout(poll_callback)
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/mlagents_envs/rpc_communicator.py", line 111, in poll_for_timeout
+    poll_callback()
+  File "/home/lx/.conda/envs/rlclass/lib/python3.8/site-packages/mlagents_envs/environment.py", line 418, in _poll_process
+    raise UnityEnvironmentException(exc_msg)
+mlagents_envs.exception.UnityEnvironmentException: Environment shut down with return code 0.

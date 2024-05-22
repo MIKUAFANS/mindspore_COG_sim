@@ -1,0 +1,129 @@
+# 1.This file shows the parsed IR info when graph evaluating failed to help find the problem.
+# 2.You can search the last `------------------------>` to the node which is inferred failed.
+# 3.Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.dat to get more instructions.
+# ===============================================================================
+
+# [No.1] train_one_episode_wrapper.1
+# In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(67)/    def train_one_episode(self):/
+funcgraph fg_1(
+        %para1 : Ref[Tensor(Bool)][1]    # init_flag
+        , %para2 : Ref[Tensor(F32)][100000, 4]    # actors.replay_buffer.buffer_0
+        , %para3 : Ref[Tensor(I32)][100000, 1]    # actors.replay_buffer.buffer_1
+        , %para4 : Ref[Tensor(F32)][100000, 1]    # actors.replay_buffer.buffer_2
+        , %para5 : Ref[Tensor(F32)][100000, 4]    # actors.replay_buffer.buffer_3
+        , %para6 : Ref[Tensor(I32)][]    # actors.replay_buffer.count
+        , %para7 : Ref[Tensor(I32)][]    # actors.replay_buffer.head
+        , %para8 : Ref[Tensor(F32)][100, 34]    # learner.actors.collect_policy._input_network.linear1.weight
+        , %para9 : Ref[Tensor(F32)][100]    # learner.actors.collect_policy._input_network.linear1.bias
+        , %para10 : Ref[Tensor(F32)][4, 100]    # learner.actors.collect_policy._input_network.linear2.weight
+        , %para11 : Ref[Tensor(F32)][4]    # learner.actors.collect_policy._input_network.linear2.bias
+        , %para12 : Ref[Tensor(F32)][100, 34]    # learner.linear1.weight
+        , %para13 : Ref[Tensor(F32)][100]    # learner.linear1.bias
+        , %para14 : Ref[Tensor(F32)][4, 100]    # learner.linear2.weight
+        , %para15 : Ref[Tensor(F32)][4]    # learner.linear2.bias
+        , %para16 : Ref[Tensor(F32)][1]    # learner.policy_network_train.optimizer.beta1_power
+        , %para17 : Ref[Tensor(F32)][1]    # learner.policy_network_train.optimizer.beta2_power
+        , %para18 : Ref[Tensor(I32)][]    # actors.step
+        , %para19 : Ref[Tensor(F32)][100, 34]    # learner.policy_network_train.optimizer.moment1.actors.collect_policy._input_network.linear1.weight
+        , %para20 : Ref[Tensor(F32)][100]    # learner.policy_network_train.optimizer.moment1.actors.collect_policy._input_network.linear1.bias
+        , %para21 : Ref[Tensor(F32)][4, 100]    # learner.policy_network_train.optimizer.moment1.actors.collect_policy._input_network.linear2.weight
+        , %para22 : Ref[Tensor(F32)][4]    # learner.policy_network_train.optimizer.moment1.actors.collect_policy._input_network.linear2.bias
+        , %para23 : Ref[Tensor(F32)][100, 34]    # learner.policy_network_train.optimizer.moment2.actors.collect_policy._input_network.linear1.weight
+        , %para24 : Ref[Tensor(F32)][100]    # learner.policy_network_train.optimizer.moment2.actors.collect_policy._input_network.linear1.bias
+        , %para25 : Ref[Tensor(F32)][4, 100]    # learner.policy_network_train.optimizer.moment2.actors.collect_policy._input_network.linear2.weight
+        , %para26 : Ref[Tensor(F32)][4]    # learner.policy_network_train.optimizer.moment2.actors.collect_policy._input_network.linear2.bias
+        , %para27 : Ref[Tensor(F32)][100, 34]    # learner.policy_network_train.optimizer.vhat.actors.collect_policy._input_network.linear1.weight
+        , %para28 : Ref[Tensor(F32)][100]    # learner.policy_network_train.optimizer.vhat.actors.collect_policy._input_network.linear1.bias
+        , %para29 : Ref[Tensor(F32)][4, 100]    # learner.policy_network_train.optimizer.vhat.actors.collect_policy._input_network.linear2.weight
+        , %para30 : Ref[Tensor(F32)][4]    # learner.policy_network_train.optimizer.vhat.actors.collect_policy._input_network.linear2.bias
+        , %para31 : Ref[Tensor(F32)][]    # learner.policy_network_train.optimizer.learning_rate
+        , %para32 : Ref[Tensor(I32)][1]    # learner.policy_network_train.optimizer.global_step
+    ) {
+
+#------------------------> 0
+    %1 = FuncGraph::fg_5()    # fg_5=train_one_episode.5 #scope: Default
+#[CNode]7
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/#[CNode]8
+}
+# order:
+#   1: train_one_episode_wrapper.1:[CNode]7{[0]: ValueNode<FuncGraph> train_one_episode.5}
+#   2: train_one_episode_wrapper.1:[CNode]8{[0]: ValueNode<Primitive> Return, [1]: [CNode]7}
+
+
+# [No.2] train_one_episode.5
+# In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(67)/    def train_one_episode(self):/
+funcgraph fg_5[fg_1](
+) {
+    %1 : Tensor(Bool)[1] = DoSignaturePrimitive::S-Prim-logical_not{prim_type=1}(%para1)    #(Ref[Tensor(Bool)][1]) #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/#[CNode]9
+    %2 : Tensor(Bool)[1] = FuncGraph::fg_10(%1)    #(Tensor(Bool)[1])    # fg_10=bool_.10 #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/#[CNode]11
+    %3 : Func = Primitive::Switch{prim_type=1}(%2, FuncGraph::fg_4, FuncGraph::fg_12)    #(Tensor(Bool)[1], Func, Func)    # fg_4=✓train_one_episode.4, fg_12=✗train_one_episode.12 #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/#[CNode]13
+
+#------------------------> 1
+    %4 = %3() #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/#[CNode]14
+    Primitive::Return{prim_type=1}(%4)    #(Undefined) #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/#[CNode]15
+}
+# order:
+#   1: train_one_episode.5:[CNode]9{[0]: ValueNode<DoSignaturePrimitive> S-Prim-logical_not, [1]: init_flag}
+#   2: train_one_episode.5:[CNode]11{[0]: ValueNode<FuncGraph> bool_.10, [1]: [CNode]9}
+#   3: train_one_episode.5:[CNode]13{[0]: ValueNode<Primitive> Switch, [1]: [CNode]11, [2]: ValueNode<FuncGraph> ✓train_one_episode.4, [3]: ValueNode<FuncGraph> ✗train_one_episode.12}
+#   4: train_one_episode.5:[CNode]14{[0]: [CNode]13}
+#   5: train_one_episode.5:[CNode]15{[0]: ValueNode<Primitive> Return, [1]: [CNode]14}
+
+
+# [No.3] ✓train_one_episode.4
+# In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/
+funcgraph fg_4[fg_1](
+) {
+
+#------------------------> 2
+    %1 = FuncGraph::fg_6()    # fg_6=init_training.6 #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(70)/            self.init_training()/#[CNode]16
+    %2 = FuncGraph::fg_17(%para1, Tensor(30)[1])    #(Ref[Tensor(Bool)][1], Undefined)    # fg_17=assign.17 #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(71)/            self.inited = self.true/#[CNode]18
+    %3 = Primitive::MakeTuple{prim_type=1}(%1, %2)    #(Undefined, Undefined) #scope: Default
+#[CNode]19
+    %4 = Primitive::stop_gradient{prim_type=1}(%3)    #(Undefined) #scope: Default
+#[CNode]20
+    %5 = FuncGraph::fg_21()    # fg_21=↓train_one_episode.21 #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/#[CNode]22
+    %6 = Primitive::Depend{prim_type=1}[side_effect_propagate=I64(1)](%5, %4)    #(Undefined, Undefined) #scope: Default
+#[CNode]23
+    Primitive::Return{prim_type=1}(%6)    #(Undefined) #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(69)/        if not self.inited:/#[CNode]24
+}
+# order:
+#   1: ✓train_one_episode.4:[CNode]16{[0]: ValueNode<FuncGraph> init_training.6}
+#   2: ✓train_one_episode.4:[CNode]18{[0]: ValueNode<FuncGraph> assign.17, [1]: init_flag, [2]: ValueNode<Tensor> Tensor(shape=[1], dtype=Bool, value=[ True])}
+#   3: ✓train_one_episode.4:[CNode]22{[0]: ValueNode<FuncGraph> ↓train_one_episode.21}
+#   4: ✓train_one_episode.4:[CNode]24{[0]: ValueNode<Primitive> Return, [1]: [CNode]23}
+
+
+# [No.4] init_training.6
+# In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(49)/    def init_training(self):/
+funcgraph fg_6[fg_1](
+) {
+
+#------------------------> 3
+    %1 = Primitive::getattr{prim_type=1}(InterpretedObject, "reset")    #(ExternalType, String) #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(51)/        state = self.msrl.collect_environment.reset()/#[CNode]25
+    %2 = %1() #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(51)/        state = self.msrl.collect_environment.reset()/#state
+    %3 = FuncGraph::fg_26(Tensor(43)[], %2, Tensor(30)[1])    #(Undefined, Undefined, Undefined)    # fg_26=⤾init_training.26 #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(54)/        while self.less(i, self.fill_value):/#[CNode]27
+    Primitive::Return{prim_type=1}(%3)    #(Undefined) #scope: Default
+      # In file /home/lx/rlclass/reinforcement/example/dqn/src/dqn_trainer.py(54)/        while self.less(i, self.fill_value):/#[CNode]28
+}
+# order:
+#   1: init_training.6:state{[0]: [CNode]25}
+#   2: init_training.6:[CNode]27{[0]: ValueNode<FuncGraph> ⤾init_training.26, [1]: ValueNode<Tensor> Tensor(shape=[], dtype=Float32, value=0), [2]: state, [3]: ValueNode<Tensor> Tensor(shape=[1], dtype=Bool, value=[False])}
+#   3: init_training.6:[CNode]28{[0]: ValueNode<Primitive> Return, [1]: [CNode]27}
+
+
+#===============================================================================
+# num of function graphs in stack: 4

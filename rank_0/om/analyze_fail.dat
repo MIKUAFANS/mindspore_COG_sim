@@ -1,0 +1,147 @@
+# 1.This file shows the parsed IR info when graph evaluating failed to help find the problem.
+# 2.You can search the last `------------------------>` to the node which is inferred failed.
+# 3.Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.dat to get more instructions.
+# ===============================================================================
+
+# [No.1] construct_wrapper.1
+# In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(121)/        def construct(self, params):/
+funcgraph fg_1(
+        %para1 : Tensor(F32)[18]    # params
+        , %para2 : Ref[Tensor(F32)][4]    # learner.actor_net.bias_sigma_actor
+        , %para3 : Ref[Tensor(F32)][4]    # learner.actor_net.linear_miu_actor.bias
+        , %para4 : Ref[Tensor(F32)][4, 100]    # learner.actor_net.linear_miu_actor.weight
+        , %para5 : Ref[Tensor(F32)][100]    # learner.actor_net.linear2_actor.bias
+        , %para6 : Ref[Tensor(F32)][100, 200]    # learner.actor_net.linear2_actor.weight
+        , %para7 : Ref[Tensor(F32)][200]    # learner.actor_net.linear1_actor.bias
+        , %para8 : Ref[Tensor(F32)][200, 18]    # learner.actor_net.linear1_actor.weight
+    ) {
+
+#------------------------> 0
+    %1 = FuncGraph::fg_3(%para1)    #(Tensor(F32)[18])    # fg_3=construct.3 #scope: Default
+#[CNode]5
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(124)/            return action, miu, sigma/#[CNode]6
+}
+# order:
+#   1: construct_wrapper.1:[CNode]5{[0]: ValueNode<FuncGraph> construct.3, [1]: params}
+#   2: construct_wrapper.1:[CNode]6{[0]: ValueNode<Primitive> Return, [1]: [CNode]5}
+
+
+# [No.2] construct.3
+# In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(121)/        def construct(self, params):/
+funcgraph fg_3[fg_1](
+        %para9 : Tensor(F32)[18]    # params
+    ) {
+
+#------------------------> 1
+    %1 = FuncGraph::fg_4(%para9)    #(Tensor(F32)[18])    # fg_4=construct.4 #scope: Default
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(122)/            miu, sigma = self.actor_net(params)/#[CNode]7
+    %2 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(0))    #(Undefined, Undefined) #scope: Default
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(122)/            miu, sigma = self.actor_net(params)/#miu
+    %3 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(1))    #(Undefined, Undefined) #scope: Default
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(122)/            miu, sigma = self.actor_net(params)/#sigma
+    %4 = FuncGraph::fg_8((), %2, %3)    #(Undefined, Undefined, Undefined)    # fg_8=sample.8 #scope: Default
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(123)/            action = self.norm_dist.sample((), miu, sigma)/#action
+    %5 = DoSignaturePrimitive::S-Prim-MakeTuple{prim_type=1}(%4, %2, %3)    #(Undefined, Undefined, Undefined) #scope: Default
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(124)/            return action, miu, sigma/#[CNode]9
+    Primitive::Return{prim_type=1}(%5)    #(Undefined) #scope: Default
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(124)/            return action, miu, sigma/#[CNode]10
+}
+# order:
+#   1: construct.3:[CNode]7{[0]: ValueNode<FuncGraph> construct.4, [1]: params}
+#   2: construct.3:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]7, [2]: ValueNode<Int64Imm> 0}
+#   3: construct.3:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]7, [2]: ValueNode<Int64Imm> 1}
+#   4: construct.3:action{[0]: ValueNode<FuncGraph> sample.8, [1]: ValueNode<ValueTuple> (), [2]: miu, [3]: sigma}
+#   5: construct.3:[CNode]9{[0]: ValueNode<DoSignaturePrimitive> S-Prim-MakeTuple, [1]: action, [2]: miu, [3]: sigma}
+#   6: construct.3:[CNode]10{[0]: ValueNode<Primitive> Return, [1]: [CNode]9}
+
+
+# [No.3] construct.4
+# In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(66)/        def construct(self, x):/
+funcgraph fg_4[fg_1](
+        %para10 : Tensor(F32)[18]    # x
+    ) {
+    %1 : I64 = DoSignaturePrimitive::S-Prim-negative{prim_type=1}(I64(1))    #(I64) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(68)/            x = self.reshape(x, (-1, 4))/#[CNode]11
+    %2 : Tuple[I64*2] = DoSignaturePrimitive::S-Prim-MakeTuple{prim_type=1}(%1, I64(4))    #(I64, I64) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(68)/            x = self.reshape(x, (-1, 4))/#[CNode]12
+
+#------------------------> 2
+    %3 = DoSignaturePrimitive::S-Prim-Reshape{prim_type=1}[output_names=["output"], input_names=["tensor", "shape"]](%para10, %2)    #(Tensor(F32)[18], Tuple[I64*2]) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(68)/            x = self.reshape(x, (-1, 4))/#x
+    %4 = DoSignaturePrimitive::S-Prim-Print{prim_type=1}[side_effect_io=Bool(1)](%3)    #(Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(69)/            print(x)/#[CNode]13
+    %5 = Primitive::stop_gradient{prim_type=1}(%4)    #(Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(122)/            miu, sigma = self.actor_net(params)/#[CNode]14
+    %6 = FuncGraph::fg_15(%3)    #(Undefined)    # fg_15=construct.15 #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(70)/            x = self.tanh_actor(self.linear1_actor(x))/#[CNode]16
+    %7 = FuncGraph::fg_17(%6)    #(Undefined)    # fg_17=construct.17 #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(70)/            x = self.tanh_actor(self.linear1_actor(x))/#x
+    %8 = FuncGraph::fg_18(%7)    #(Undefined)    # fg_18=construct.18 #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(71)/            x = self.tanh_actor(self.linear2_actor(x))/#[CNode]19
+    %9 = FuncGraph::fg_17(%8)    #(Undefined)    # fg_17=construct.17 #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(71)/            x = self.tanh_actor(self.linear2_actor(x))/#x
+    %10 = FuncGraph::fg_20(%9)    #(Undefined)    # fg_20=construct.20 #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(72)/            miu = self.tanh_actor(self.linear_miu_actor(x))/#[CNode]21
+    %11 = FuncGraph::fg_17(%10)    #(Undefined)    # fg_17=construct.17 #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(72)/            miu = self.tanh_actor(self.linear_miu_actor(x))/#miu
+    %12 = DoSignaturePrimitive::S-Prim-negative{prim_type=1}(I64(1))    #(Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(74)/            miu = self.reshape(miu, (-1, 4))/#[CNode]22
+    %13 = DoSignaturePrimitive::S-Prim-MakeTuple{prim_type=1}(%12, I64(4))    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(74)/            miu = self.reshape(miu, (-1, 4))/#[CNode]23
+    %14 = DoSignaturePrimitive::S-Prim-Reshape{prim_type=1}[output_names=["output"], input_names=["tensor", "shape"]](%11, %13)    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(74)/            miu = self.reshape(miu, (-1, 4))/#miu
+    %15 = Primitive::getattr{prim_type=1}(%11, "shape")    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(73)/            miu_shape = miu.shape/#miu_shape
+    %16 = DoSignaturePrimitive::S-Prim-Reshape{prim_type=1}[output_names=["output"], input_names=["tensor", "shape"]](%14, %15)    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(79)/            miu = self.reshape(miu, miu_shape)/#miu
+    %17 = DoSignaturePrimitive::S-Prim-Cast{prim_type=1}[output_names=["output"], input_names=["x", "dst_type"]](%16, F32)    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(83)/            miu = self.cast(miu, mindspore.float32)/#miu
+    %18 = DoSignaturePrimitive::S-Prim-ZerosLike{prim_type=1}[output_names=["y"], input_names=["x"]](%14)    #(Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(78)/                self.bias_add(self.zeros_like(miu), bias_sigma_actor))/#[CNode]24
+    %19 = DoSignaturePrimitive::S-Prim-Cast{prim_type=1}[output_names=["output"], input_names=["x", "dst_type"]](%para2, F32)    #(Ref[Tensor(F32)][4], Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(76)/            bias_sigma_actor = self.cast(self.bias_sigma_actor, self.compute_type)/#bias_sigma_actor
+    %20 = DoSignaturePrimitive::S-Prim-BiasAdd{prim_type=1}[output_names=["output"], format="NCHW", input_names=["x", "b"]](%18, %19)    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(78)/                self.bias_add(self.zeros_like(miu), bias_sigma_actor))/#[CNode]25
+    %21 = DoSignaturePrimitive::S-Prim-Softplus{prim_type=1}[output_names=["output"], input_names=["x"]](%20)    #(Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(77)/            sigma = self.softplus_actor(/#sigma
+    %22 = DoSignaturePrimitive::S-Prim-Reshape{prim_type=1}[output_names=["output"], input_names=["tensor", "shape"]](%21, %15)    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(80)/            sigma = self.reshape(sigma, miu_shape)/#sigma
+    %23 = DoSignaturePrimitive::S-Prim-Cast{prim_type=1}[output_names=["output"], input_names=["x", "dst_type"]](%22, F32)    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(84)/            sigma = self.cast(sigma, mindspore.float32)/#sigma
+    %24 = DoSignaturePrimitive::S-Prim-MakeTuple{prim_type=1}(%17, %23)    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(85)/            return miu, sigma/#[CNode]26
+    %25 = Primitive::Depend{prim_type=1}[side_effect_propagate=I64(1)](%24, %5)    #(Undefined, Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(122)/            miu, sigma = self.actor_net(params)/#[CNode]27
+    Primitive::Return{prim_type=1}(%25)    #(Undefined) #scope: Default/actor_net-PPOActorNet
+      # In file /home/lipengjiang/Project/homework2-2-baseline/reinforcement/example/dqn/src/ppo/ppo.py(85)/            return miu, sigma/#[CNode]28
+}
+# order:
+#   1: construct.4:[CNode]11{[0]: ValueNode<DoSignaturePrimitive> S-Prim-negative, [1]: ValueNode<Int64Imm> 1}
+#   2: construct.4:[CNode]12{[0]: ValueNode<DoSignaturePrimitive> S-Prim-MakeTuple, [1]: [CNode]11, [2]: ValueNode<Int64Imm> 4}
+#   3: construct.4:x{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Reshape, [1]: x, [2]: [CNode]12}
+#   4: construct.4:[CNode]13{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Print, [1]: x}
+#   5: construct.4:[CNode]16{[0]: ValueNode<FuncGraph> construct.15, [1]: x}
+#   6: construct.4:x{[0]: ValueNode<FuncGraph> construct.17, [1]: [CNode]16}
+#   7: construct.4:[CNode]19{[0]: ValueNode<FuncGraph> construct.18, [1]: x}
+#   8: construct.4:x{[0]: ValueNode<FuncGraph> construct.17, [1]: [CNode]19}
+#   9: construct.4:[CNode]21{[0]: ValueNode<FuncGraph> construct.20, [1]: x}
+#  10: construct.4:miu{[0]: ValueNode<FuncGraph> construct.17, [1]: [CNode]21}
+#  11: construct.4:miu_shape{[0]: ValueNode<Primitive> getattr, [1]: miu, [2]: ValueNode<StringImm> shape}
+#  12: construct.4:[CNode]22{[0]: ValueNode<DoSignaturePrimitive> S-Prim-negative, [1]: ValueNode<Int64Imm> 1}
+#  13: construct.4:[CNode]23{[0]: ValueNode<DoSignaturePrimitive> S-Prim-MakeTuple, [1]: [CNode]22, [2]: ValueNode<Int64Imm> 4}
+#  14: construct.4:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Reshape, [1]: miu, [2]: [CNode]23}
+#  15: construct.4:bias_sigma_actor{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Cast, [1]: learner.actor_net.bias_sigma_actor, [2]: ValueNode<Float> Float32}
+#  16: construct.4:[CNode]24{[0]: ValueNode<DoSignaturePrimitive> S-Prim-ZerosLike, [1]: miu}
+#  17: construct.4:[CNode]25{[0]: ValueNode<DoSignaturePrimitive> S-Prim-BiasAdd, [1]: [CNode]24, [2]: bias_sigma_actor}
+#  18: construct.4:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Softplus, [1]: [CNode]25}
+#  19: construct.4:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Reshape, [1]: miu, [2]: miu_shape}
+#  20: construct.4:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Reshape, [1]: sigma, [2]: miu_shape}
+#  21: construct.4:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Cast, [1]: miu, [2]: ValueNode<Float> Float32}
+#  22: construct.4:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Cast, [1]: sigma, [2]: ValueNode<Float> Float32}
+#  23: construct.4:[CNode]26{[0]: ValueNode<DoSignaturePrimitive> S-Prim-MakeTuple, [1]: miu, [2]: sigma}
+#  24: construct.4:[CNode]28{[0]: ValueNode<Primitive> Return, [1]: [CNode]27}
+
+
+#===============================================================================
+# num of function graphs in stack: 3/4 (Ignored 1 internal frames).
