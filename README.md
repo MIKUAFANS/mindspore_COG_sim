@@ -16,9 +16,7 @@ The version of MindSpore is 1.8.1, and the version of MindSpore-RL is 0.5.0.
 ## 2. Run the training
 
 # DDPG successfully trained on the COG sim2real challenge environment
-<video id="video" controls="" preload="none">
-      <source id="mp4" src="video/output/output_video_1.mp4" type="video/mp4">
-</video>
+![](assets/show.gif)
 
 # PPO successfully trained on the COG sim2real challenge environment
-Waiting for the video
+Waiting
